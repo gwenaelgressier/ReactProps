@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { HandleProps } from "./HandleProps";
 
 function App() {
+  const [test, setTest] = useState(false);
+  const [testSucess, setTestSucess] = useState(false);
+
+  const handletest = () => {
+    setTest(!test);
+    setTestSucess(false);
+  };
+
+  const handletestSucess = () => {
+    handletest();
+    setTestSucess(!testSucess);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <button className="btn-test" onClick={handletest}>
+          test
+        </button>
+      </div>
+      {test && (
+        <HandleProps
+          test={test}
+          handletest={handletest}
+          handletestSucess={handletestSucess}
+        />
+      )}
+      {testSucess && <p>nice</p>}
     </div>
   );
 }
