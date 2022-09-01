@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactProps/static/css/main.073c9b0a.css",
+    "main.js": "/ReactProps/static/js/main.f90a25ea.js",
+    "static/js/787.54065df8.chunk.js": "/ReactProps/static/js/787.54065df8.chunk.js",
+    "index.html": "/ReactProps/index.html",
+    "main.073c9b0a.css.map": "/ReactProps/static/css/main.073c9b0a.css.map",
+    "main.f90a25ea.js.map": "/ReactProps/static/js/main.f90a25ea.js.map",
+    "787.54065df8.chunk.js.map": "/ReactProps/static/js/787.54065df8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f90a25ea.js"
+  ]
+}
